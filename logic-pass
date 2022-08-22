@@ -1,6 +1,36 @@
+Q1/Write a method that will remove any given character from a String?
+
 str= input("Enter String :")
 chr = input("Enter Char you want to remove from the given string :")
-
 str1= str.replace(chr,"")
-
 print(str1)
+
+
+
+Q2/Write a program to find all prime numbers up to a given range
+of numbers?
+
+min = int(input("enter the start number : "))
+max = int(input("enter the end number :"))
+
+for i in range (min ,max+1):
+    if i>1:
+        for j in range(2,i):
+            if (i%j) == 0:
+                break
+        else:
+            print(i)
+            
+
+Q3/write a function that count how many the given character repeated
+in a given string?
+
+count = 0
+str = input("Enter String :")
+char = input("Enter Character you want to find how many repeated : ")
+for ch in str:
+    if ch == char:
+        count+=1
+print("The Character (",char,") is repeated [",count,"] times")
+            
+
