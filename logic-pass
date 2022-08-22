@@ -1,0 +1,6 @@
+str= input("Enter String :")
+chr = input("Enter Char you want to remove from the given string :")
+
+str1= str.replace(chr,"")
+
+print(str1)
